@@ -58,12 +58,12 @@ private:
 	void printInorder(TreeNode<treeEltType>* data) const;
 
 	// Display Tree using PreOrder Traversal
-	void printPreorder() const;
+	void printPreorder(TreeNode<treeEltType>* data) const;
 
 	// Display Tree using PostOrder Traversal
-	void printPostorder() const;
+	void printPostorder(TreeNode<treeEltType>* data) const;
 
-	void treePrintHelper(TreeNode<treeEltType>*) const;
+	void treePrintHelper(TreeNode<treeEltType>* data) const;
 };
 
 

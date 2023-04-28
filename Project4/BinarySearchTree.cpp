@@ -43,13 +43,13 @@ int BinaryTree<treeEltType>::insertToTree(const treeEltType& data)
 
 	if (data > parent->m_Info)
 	{
-		TreeNode<treeEltType>* newNode = new TreeNode<treeEltType>(data, parent->m_Right);
+		TreeNode<treeEltType>* newNode = new TreeNode<treeEltType>(data);
 		parent->m_Right = newNode;
 		return 1;
 	}
 	else
 	{
-		TreeNode<treeEltType>* newNode = new TreeNode<treeEltType>(data, parent->m_Left);
+		TreeNode<treeEltType>* newNode = new TreeNode<treeEltType>(data);
 		parent->m_Left = newNode;
 		return 1;
 	}
@@ -92,38 +92,50 @@ treeEltType& BinaryTree<treeEltType>::retrieveFromTree(const treeEltType& data)
 			curr = curr->m_Left;
 	}
 
-	return curr->m_Info ;
+		return curr->m_Info;
+
 }
-//
-//template <typename treeEltType>
-//void BinaryTree<treeEltType>::deleteFromTree(const treeEltType& data)
-//{
-//
-//}
+
+template <typename treeEltType>
+void BinaryTree<treeEltType>::deleteFromTree(const treeEltType& data)
+{
+	TreeNode<treeEltType>* curr = m_Root;
+
+	while (curr && curr->m_Info != data)
+	{
+		if (curr->m_Info < data)
+			curr = curr->m_Right;
+		else
+			curr = curr->m_Left;
+	}
+
+	if (curr)
+		curr->m_Count -= 1;
+}
 
 template <typename treeEltType>
 void BinaryTree<treeEltType>::inorder() const
 {
 	printInorder(m_Root);
 }
-//
-//template <typename treeEltType>
-//void BinaryTree<treeEltType>::preorder() const
-//{
-//
-//}
-//
-//template <typename treeEltType>
-//void BinaryTree<treeEltType>::postorder() const
-//{
-//
-//}
-//
-//template <typename treeEltType>
-//void BinaryTree<treeEltType>::treePrint() const
-//{
-//
-//}
+
+template <typename treeEltType>
+void BinaryTree<treeEltType>::preorder() const
+{
+	printPreorder(m_Root);
+}
+
+template <typename treeEltType>
+void BinaryTree<treeEltType>::postorder() const
+{
+	printPostorder(m_Root);
+}
+
+template <typename treeEltType>
+void BinaryTree<treeEltType>::treePrint() const
+{
+	treePrintHelper(m_Root);
+}
 
 template <typename treeEltType>
 void BinaryTree<treeEltType>::printInorder(TreeNode<treeEltType>* data) const
@@ -135,23 +147,47 @@ void BinaryTree<treeEltType>::printInorder(TreeNode<treeEltType>* data) const
 	std::cout << data->m_Info << " " << data->m_Count << std::endl;
 	printInorder(data->m_Right);
 }
-//
-//template <typename treeEltType>
-//void BinaryTree<treeEltType>::printPreorder() const
-//{
-//
-//}
-//
-//template <typename treeEltType>
-//void BinaryTree<treeEltType>::printPostorder() const
-//{
-//
-//}
-//template <typename treeEltType>
-//void BinaryTree<treeEltType>::treePrintHelper(TreeNode<treeEltType>*) const
-//{
-//
-//}
+
+template <typename treeEltType>
+void BinaryTree<treeEltType>::printPreorder(TreeNode<treeEltType>* data) const
+{
+	if (data == nullptr)
+		return;
+
+	std::cout << data->m_Info << " " << data->m_Count << std::endl;
+	printPreorder(data->m_Left);
+	printPreorder(data->m_Right);
+}
+
+template <typename treeEltType>
+void BinaryTree<treeEltType>::printPostorder(TreeNode<treeEltType>* data) const
+{
+	if (data == nullptr)
+		return;
+
+	printPostorder(data->m_Left);
+	printPostorder(data->m_Right);
+	std::cout << data->m_Info << " " << data->m_Count << std::endl;
+}
+template <typename treeEltType>
+void BinaryTree<treeEltType>::treePrintHelper(TreeNode<treeEltType>* data) const
+{
+	std::queue<TreeNode<treeEltType> *> nodes;
+	nodes.push(data);
+
+	while (!nodes.empty())
+	{
+		TreeNode<treeEltType>* curr = nodes.front();
+		nodes.pop();
+
+		std::cout << curr->m_Info << " " << curr->m_Count << std::endl;
+
+		if (curr->m_Left)
+			nodes.push(curr->m_Left);
+		if (curr->m_Right)
+			nodes.push(curr->m_Right);
+	}
+}
 
 template class BinaryTree<int>;
 //template class BinaryTree<std::string>;
