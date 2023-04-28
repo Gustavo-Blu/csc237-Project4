@@ -1,0 +1,46 @@
+﻿  BinarySearchTree.cpp
+C:\projects\CSC\Project4\Project4\BinarySearchTree.cpp(156,31): warning C4661: 'void BinaryTree<int>::deleteFromTree(const treeEltType &)': no suitable definition provided for explicit template instantiation request
+          with
+          [
+              treeEltType=int
+          ]
+C:\projects\CSC\Project4\Project4\BinarySearchTree.h(39,7): message : see declaration of 'BinaryTree<int>::deleteFromTree'
+C:\projects\CSC\Project4\Project4\BinarySearchTree.cpp(156,31): warning C4661: 'void BinaryTree<int>::preorder(void) const': no suitable definition provided for explicit template instantiation request
+C:\projects\CSC\Project4\Project4\BinarySearchTree.h(45,7): message : see declaration of 'BinaryTree<int>::preorder'
+C:\projects\CSC\Project4\Project4\BinarySearchTree.cpp(156,31): warning C4661: 'void BinaryTree<int>::postorder(void) const': no suitable definition provided for explicit template instantiation request
+C:\projects\CSC\Project4\Project4\BinarySearchTree.h(48,7): message : see declaration of 'BinaryTree<int>::postorder'
+C:\projects\CSC\Project4\Project4\BinarySearchTree.cpp(156,31): warning C4661: 'void BinaryTree<int>::treePrint(void) const': no suitable definition provided for explicit template instantiation request
+C:\projects\CSC\Project4\Project4\BinarySearchTree.h(51,7): message : see declaration of 'BinaryTree<int>::treePrint'
+C:\projects\CSC\Project4\Project4\BinarySearchTree.cpp(156,31): warning C4661: 'void BinaryTree<int>::printPreorder(void) const': no suitable definition provided for explicit template instantiation request
+C:\projects\CSC\Project4\Project4\BinarySearchTree.h(61,7): message : see declaration of 'BinaryTree<int>::printPreorder'
+C:\projects\CSC\Project4\Project4\BinarySearchTree.cpp(156,31): warning C4661: 'void BinaryTree<int>::printPostorder(void) const': no suitable definition provided for explicit template instantiation request
+C:\projects\CSC\Project4\Project4\BinarySearchTree.h(64,7): message : see declaration of 'BinaryTree<int>::printPostorder'
+C:\projects\CSC\Project4\Project4\BinarySearchTree.cpp(156,31): warning C4661: 'void BinaryTree<int>::treePrintHelper(TreeNode<treeEltType> *) const': no suitable definition provided for explicit template instantiation request
+          with
+          [
+              treeEltType=int
+          ]
+C:\projects\CSC\Project4\Project4\BinarySearchTree.h(66,7): message : see declaration of 'BinaryTree<int>::treePrintHelper'
+C:\projects\CSC\Project4\Project4\BinarySearchTree.cpp(8): warning C4661: 'void BinaryTree<int>::deleteFromTree(const treeEltType &)': no suitable definition provided for explicit template instantiation request
+          with
+          [
+              treeEltType=int
+          ]
+C:\projects\CSC\Project4\Project4\BinarySearchTree.h(39,7): message : see declaration of 'BinaryTree<int>::deleteFromTree'
+C:\projects\CSC\Project4\Project4\BinarySearchTree.cpp(8): warning C4661: 'void BinaryTree<int>::preorder(void) const': no suitable definition provided for explicit template instantiation request
+C:\projects\CSC\Project4\Project4\BinarySearchTree.h(45,7): message : see declaration of 'BinaryTree<int>::preorder'
+C:\projects\CSC\Project4\Project4\BinarySearchTree.cpp(8): warning C4661: 'void BinaryTree<int>::postorder(void) const': no suitable definition provided for explicit template instantiation request
+C:\projects\CSC\Project4\Project4\BinarySearchTree.h(48,7): message : see declaration of 'BinaryTree<int>::postorder'
+C:\projects\CSC\Project4\Project4\BinarySearchTree.cpp(8): warning C4661: 'void BinaryTree<int>::treePrint(void) const': no suitable definition provided for explicit template instantiation request
+C:\projects\CSC\Project4\Project4\BinarySearchTree.h(51,7): message : see declaration of 'BinaryTree<int>::treePrint'
+C:\projects\CSC\Project4\Project4\BinarySearchTree.cpp(8): warning C4661: 'void BinaryTree<int>::printPreorder(void) const': no suitable definition provided for explicit template instantiation request
+C:\projects\CSC\Project4\Project4\BinarySearchTree.h(61,7): message : see declaration of 'BinaryTree<int>::printPreorder'
+C:\projects\CSC\Project4\Project4\BinarySearchTree.cpp(8): warning C4661: 'void BinaryTree<int>::printPostorder(void) const': no suitable definition provided for explicit template instantiation request
+C:\projects\CSC\Project4\Project4\BinarySearchTree.h(64,7): message : see declaration of 'BinaryTree<int>::printPostorder'
+C:\projects\CSC\Project4\Project4\BinarySearchTree.cpp(8): warning C4661: 'void BinaryTree<int>::treePrintHelper(TreeNode<treeEltType> *) const': no suitable definition provided for explicit template instantiation request
+          with
+          [
+              treeEltType=int
+          ]
+C:\projects\CSC\Project4\Project4\BinarySearchTree.h(66,7): message : see declaration of 'BinaryTree<int>::treePrintHelper'
+  Project4.vcxproj -> C:\projects\CSC\Project4\x64\Debug\Project4.exe
