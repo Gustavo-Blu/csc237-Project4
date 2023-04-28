@@ -1,2 +1,4 @@
-﻿  main.cpp
+﻿  TreeTest.cpp
+C:\projects\CSC\Project4\Project4\TreeTest.cpp(19,15): warning C4101: 'result': unreferenced local variable
+C:\projects\CSC\Project4\Project4\TreeTest.cpp(19,6): warning C4101: 'entry': unreferenced local variable
   Project4.vcxproj -> C:\projects\CSC\Project4\x64\Debug\Project4.exe

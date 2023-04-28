@@ -140,7 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="BinarySearchTree.cpp" />
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="TreeTest.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BinarySearchTree.h" />
